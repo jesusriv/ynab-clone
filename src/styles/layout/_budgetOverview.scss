@@ -1,0 +1,73 @@
+.budget-overview {
+    flex-grow: 1; 
+    // height: 100%;
+    background-color: $light-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    overflow-y: scroll;
+    &--amounts {
+        height: 6.95rem;
+        width: 80%;
+        border-bottom: 1px solid #CCDADE;
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        &__title, &__amount {
+            color: $font-blue-dark-fade;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &__title {
+            font-size: 1.12rem;
+            line-height: 1.28rem;
+            letter-spacing: 0.08rem;
+            font-weight: 900;
+            padding-bottom: .56rem 0;
+        }
+
+        &__amount {
+            font-size: 2.56rem;
+            font-weight: 900;
+            margin-top: .56rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &--bottom {
+        width: 80%;
+        margin-top: 2rem;
+        .quick {
+            font-size: 1.12rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $font-blue-dark-fade;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .quick-budget--component {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 3rem;
+            background-color: #CEECF4;
+            border-radius: 5px;
+            color: $font-blue;
+            font-size: 1.28rem;
+            margin-bottom: .2rem;
+            span {
+                font-weight: bolder;
+            }
+        }
+
+    }
+    .b {
+        padding-bottom: 5.6rem
+    }
+}

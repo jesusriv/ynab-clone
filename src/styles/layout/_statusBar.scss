@@ -1,0 +1,115 @@
+.statusBar {
+    width: 102rem;
+    height: 8.9rem;
+    display: flex;
+    padding: 1.3rem 0;
+    background-color: $darkest-blue;
+}
+
+// MONTH TOGGLE
+
+.month-toggle {
+    border-right: 1px solid $border-dark-blue;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5.5rem;
+
+    .middle {
+        &--current_month {
+            font-size: $font-large;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &--note {
+            font-size: $font-medium-small;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+}
+
+
+// BUDGET SUMMARY 
+
+.budget-summary {
+    border-right: 1px solid $border-dark-blue;
+    width: 52.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--center {
+        display: flex;
+    }
+    
+}
+
+.tbb {
+    width: 11.1rem;
+    height: 7rem;
+    background-color: $green;
+    border-radius: 1rem;
+    position: relative;
+
+    #tri {
+        position: absolute;
+        right: -3.2em;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--amount {
+        font-size: $font-tbb;
+        font-weight: 300;
+        text-align: center;
+        margin: 1rem 0 .6rem 0;
+    }
+
+    &--tbb {
+        font-size: 1.44rem;
+        color: $darkest-blue;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+.budget-glance {
+    width: fit-content;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    left: -1.8rem;
+    p {
+        font-size: 1.28rem;
+    }
+    &--amount {
+        text-align: end;
+    }
+}
+
+// AGE OG MONEY
+
+.age-of-money {
+    width: 19.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+        text-align: center;    
+    }
+    &--days {
+        color: $money-green;
+        font-size: $font-big-money;
+    }
+    
+    &--text {
+        color: white;
+        font-weight: 600;
+        font-style: italic;
+        font-size: $font-medium;
+    }
+}
+

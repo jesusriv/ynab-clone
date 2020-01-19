@@ -1,0 +1,288 @@
+.main-sidebar {
+    width: 26rem;
+}
+
+// MAIN NAVIGATION
+
+.main-navigation {
+    width: 100%;
+    background-color: $primary-blue;
+    .budget {
+        position: relative;
+        width: 100%;
+        height: 6.3rem;
+        padding: 1.4rem 1.7rem;
+        &--title {
+            font-size: $font-regular;
+            font-weight: 800;
+        }
+        &--email {
+            color: #BFE0E6;
+            font-weight: 400;
+            font-size: $font-medium-small;
+        }
+
+        .down {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            right: 1.6rem;
+        }
+
+
+        .settings-modal {
+            position: relative;
+            width: 22.4rem;
+            height: 29.3rem;
+            background-color: white;
+            box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.3);
+            border-radius: .5rem;
+            transform: translateX(-50%);
+            left: 96.5%;
+            margin-top: 1rem;
+            padding: .04rem 0;
+            .top {
+                position: absolute;
+                top: -.7rem;
+                transform: translate(-50%, -50%);
+                left: 50%;
+            }
+
+            &--btns {
+                width: 21.44rem;
+                margin: 0 auto;
+                padding: .5rem 1rem 1rem 1rem;
+                border-bottom: 1px solid #F1F1F1;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    height: 2.5rem;
+                    li {
+                        list-style: none;
+                    }
+                }
+                img {
+                    margin-top: .2rem;
+                }
+                p {
+                    margin-left: .7rem;
+                    color: #588697;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+            .last {
+                border-bottom: none;
+            }
+        }
+    }
+    
+    
+    .bottom {
+        width: 100%;
+        .selected {
+            background-color: $selected-blue;
+            &:hover {
+                background-color: $selected-blue;
+            }
+        }
+        &--navBtn {
+            img {
+                margin-right: .65rem;
+            }
+            text-decoration-line: none;
+            color: white;
+            display: flex;
+            padding: .7rem 1.7rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 5rem;
+            &:hover {
+                background-color: #23798a8c;
+            }
+            &__text {
+                font-weight: 500;
+                font-size: $font-regular;
+            }
+        }
+    }
+}
+
+// MAIN ACCOUNT PANEL
+
+.main-account-panel {
+    width: 26rem;
+ 
+    .budget {
+        display: grid;
+        grid-template-columns: 4.5294117647058822% 66.47058823529412% 16.176470588235293%;
+        align-items: center;
+        color: $white;
+        font-size: 1.12rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .1136rem;
+        width: 100%;
+        height: 5.1rem;
+        padding: 0 3.1rem 0 1.7rem;
+        border-top: 1px solid $border-blue;
+        border-bottom: 1px solid $border-blue;
+        &:hover {
+            cursor: pointer;
+        }
+        .down {
+            transform: rotate(90deg);
+        }
+        &--down {
+            border-bottom: none;
+        }
+
+        
+    }
+
+    .accounts-container {
+        width: 100%;
+        padding: 0 3.1rem 0 1.7rem;
+        &--account {
+            display: grid;
+            grid-template-columns: 4.5294117647058822% 66.47058823529412% 16.176470588235293%;
+            align-items: center;
+            height: 2.5rem;
+
+            &__name, &__amount {
+                font-size: $font-medium;
+            }
+        }
+    }
+}
+
+.add-btn {
+    width: 10.3rem;
+    font-size: 1.28rem;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: #56ABBD;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .3rem;
+    margin-left: 1.6rem;
+    margin-top: 1.2rem;
+    font-weight: 500;
+    img {
+        margin-right: .1rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #227586;
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal {
+        position: relative;
+        width: 48rem;
+        height: 56.8rem;
+        background-color: white;
+        z-index: 29;
+        border-radius: 1rem;
+        box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.2);
+
+        &--top {
+            height: 4.41rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.6rem;
+            border-bottom: 1px solid #EEF1F3;
+            &__title {
+                font-size: 1.92rem;
+                color: #89989E;
+                font-weight: 600;
+            }
+            img {
+                right: 1.6rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &--bottom {
+            width: 44.8rem;
+            margin: 1.6rem auto 0 auto;
+            &__desc {
+                font-size: $font-medium;
+                color: $font-black;
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            form {
+                margin: 1.6rem 0;
+                p {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                label {
+                    margin-top: .4rem;
+                    color: $font-black;
+                    font-weight: 600;
+                    font-size: $font-medium;
+                }
+                input {
+                    height: 3.1rem;
+                    width: 100%;
+                }
+                .note {
+                    font-size: 1.2rem;
+                    color: #88979D;
+                    font-weight: 600;
+                }
+            }
+
+            &__buttons {
+                width: 44.8rem;
+                position: absolute;
+                height: 6rem;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                button {
+                    width: 7.2rem;
+                    height: 3.2rem;
+                    border-radius: .7rem;
+                    border: 1px solid #DEE3E8;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    &:first-child {
+                        color: #019CC2;
+                        background-color: white;
+                    }
+                    color: white;
+                    background-color: #DEE3E8;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $selected-blue;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
