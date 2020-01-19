@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MainNavigation from '../components/main_navigation/MainNavigation';
 import MainAccountPanel from '../components/main_account_panel/MainAccountPanel';
 
