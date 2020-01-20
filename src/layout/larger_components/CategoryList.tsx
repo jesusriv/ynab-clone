@@ -1,8 +1,7 @@
 import React from 'react';
 
 import checkbox from '../../assets/checkbox.svg'
-import CategoryRow from '../smaller_components/CategoryRow';
-import SubCategoryRow from '../smaller_components/SubCategoryRow';
+import CategoryBundle from './CategoryBundle';
 
 const CategoryList: React.FC<{}> = () => {
     return (
@@ -22,30 +21,8 @@ const CategoryList: React.FC<{}> = () => {
                     <p className="available">Available</p>
                 </div>
             </div>
-            <CategoryRow 
-                category_name="Immediate Obligations"
-                budgeted={863.84}
-                activity={710.28}
-                available={154.84}
-            />
-            <SubCategoryRow 
-                sub_name="AT&T"
-                budgeted={315.55}
-                activity={315.55}
-                available={0.00}
-            />
-            <CategoryRow 
-                category_name="True Expenses"
-                budgeted={435.25}
-                activity={419.43}
-                available={15.82}
-            />
-            <SubCategoryRow 
-                sub_name="AT&T"
-                budgeted={315.55}
-                activity={315.55}
-                available={0.00}
-            />
+            <CategoryBundle />
+            <CategoryBundle />
         </div>
     );
 };
