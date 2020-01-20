@@ -1,6 +1,6 @@
 import React from 'react';
-import MainNavigation from '../components/main_navigation/MainNavigation';
-import MainAccountPanel from '../components/main_account_panel/MainAccountPanel';
+import MainNavigation from '../../components/main_navigation/MainNavigation';
+import MainAccountPanel from '../../components/main_account_panel/MainAccountPanel';
 
 interface props {
     addAccount: Function

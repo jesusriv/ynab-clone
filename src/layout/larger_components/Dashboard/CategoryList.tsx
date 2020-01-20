@@ -1,6 +1,6 @@
 import React from 'react';
 
-import checkbox from '../../assets/checkbox.svg'
+import checkbox from '../../../assets/checkbox.svg'
 import CategoryBundle from './CategoryBundle';
 
 const CategoryList: React.FC<{}> = () => {

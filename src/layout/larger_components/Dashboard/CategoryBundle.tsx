@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import CategoryRow from '../smaller_components/CategoryRow';
-import SubCategoryRow from '../smaller_components/SubCategoryRow';
+import CategoryRow from '../../smaller_components/CategoryRow';
+import SubCategoryRow from '../../smaller_components/SubCategoryRow';
 
 const CategoryBundle = () => {
     const [subs, setSubs] = useState(true);

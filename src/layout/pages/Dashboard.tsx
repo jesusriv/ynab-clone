@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import MainSideBar from '../larger_components/MainSideBar';
+import MainSideBar from '../larger_components/Dashboard/MainSideBar';
 import { Switch, Route } from 'react-router-dom';
 import Budget from '../sections/Budget';
 import AddAccount from '../components/add_account/AddAccount';
