@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StatusBar from '../larger_components/StatusBar';
-import CategoryList from '../larger_components/CategoryList';
+import StatusBar from '../larger_components/Dashboard/StatusBar';
+import CategoryList from '../larger_components/Dashboard/CategoryList';
 import BudgetOverview from '../components/budget_overview/BudgetOverview';
 
 const Budget: React.FC<{}> = () => {

@@ -14,7 +14,7 @@ const SubCategoryRow: React.FC<RowProps> = (props: RowProps) => {
     return (
         <div className="sub-row">
             <img src={checkbox} alt="" />
-            <img className="arrow" src={arrow} alt="" />
+            <img id="arrow" className="arrow" src={arrow} alt="" />
             <div className="category-list--top__c">
                 <p className="sub-name">{props.sub_name}</p>
             </div>

@@ -7,14 +7,16 @@ interface RowProps {
     category_name: String,
     budgeted: number,
     activity: number,
-    available: number
+    available: number,
+    handleSubs: Function,
+    subs: boolean
 }
 
 const CategoryRow: React.FC<RowProps> = (props: RowProps) => {
     return (
         <div className="category-row">
             <img src={checkbox} alt="" />
-            <img className="arrow" src={arrow} alt="" />
+            <img id={props.subs ? "" : "arrow"} className="arrow" src={arrow} alt="" onClick={() => props.handleSubs()} />
             <div className="category-list--top__c">
                 <p className="category-name">{props.category_name}</p>
             </div>

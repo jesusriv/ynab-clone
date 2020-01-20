@@ -99,18 +99,21 @@ const MainNavigation: React.FC<{}> = () => {
             <div className="bottom">
                 <Link 
                     to="/dashboard/budget" 
+                    onClick={() => selectorHandle('budget')}
                     className={selected.selected === 'budget' ? "bottom--navBtn selected" : "bottom--navBtn"}>
                     <img src={budget} alt="budget" />   
                     <p className="bottom--navBtn__text">Budget</p>
                 </Link>
                 <Link 
                     to="/dashboard/#" 
+                    onClick={() => selectorHandle('reports')}
                     className={selected.selected === 'reports' ? "bottom--navBtn selected" : "bottom--navBtn"}>
                     <img src={reports} alt="reports" />
                     <p className="bottom--navBtn__text">Reports</p>
                 </Link>
                 <Link 
                     to="/dashboard/#" 
+                    onClick={() => selectorHandle('accounts')}
                     className={selected.selected === 'accounts' ? "bottom--navBtn selected" : "bottom--navBtn"}>
                     <img src={accounts} alt="accounts" />
                     <p className="bottom--navBtn__text">All Accounts</p>
